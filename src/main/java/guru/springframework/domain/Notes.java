@@ -1,6 +1,7 @@
 package guru.springframework.domain;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
@@ -21,12 +22,5 @@ public class Notes {
 
     @Lob
     private String recipeNotes;
-
-    public Notes() {
-    }
-
-    protected boolean canEqual(Object other) {
-        return other instanceof Notes;
-    }
 
 }
